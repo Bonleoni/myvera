@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "VERO — Sürdürülebilir Değişim, Kişiselleştirilmiş Yaklaşım",
-  description: "Bilimsel temelli, 1'e 1 dijital koçluk ile kalıcı sonuçlar. Uygulama indirmeye gerek yok, sadece bir mesajla başlayın.",
+  title: "VERA — Stres Anındaki Dürtüleri Yönet, Alışkanlıklarını Dönüştür",
+  description: "VERA, yapay zeka destekli kişisel gelişim asistanın. Uygulama indirmeye gerek yok, sadece WhatsApp üzerinden bir mesajla başla.",
 };
 
 export default function RootLayout({
