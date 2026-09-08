@@ -47,12 +47,12 @@ export default function Home() {
               </Badge>
               
               <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-[1.1]">
-                Stres Anındaki Dürtüleri Yönet,{' '}
-                <span className="text-teal-600">Alışkanlıklarını Dönüştür</span>
+                Günlük Alışkanlıklarını{' '}
+                <span className="text-teal-600">Daha Bilinçli Yönet</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-                VERA, yapay zeka destekli kişisel gelişim asistanın. Otomatik tepkilerini fark et, mindful seçimler yap ve yaşam dengenizi kur.
+                VERA, yapay zeka destekli kişisel gelişim asistanın. Otomatik tepkilerini fark et, bilinçli seçimler yap ve yaşam dengenizi kur.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -107,7 +107,7 @@ export default function Home() {
               <CardContent className="p-6 space-y-4 bg-gradient-to-b from-white to-gray-50/50">
                 <div className="flex justify-end">
                   <div className="bg-teal-600 text-white px-4 py-3 rounded-2xl rounded-tr-sm max-w-[85%] text-sm shadow-sm">
-                    Bugün çok stresliyim, kendimi kötü hissediyorum...
+                    Bugün çok yoruldum, alışkanlıklarımı değiştirmek istiyorum...
                   </div>
                 </div>
                 <div className="flex justify-start">
@@ -239,15 +239,15 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             <div className="flex items-center gap-3 justify-center p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
               <Lock className="h-6 w-6 text-green-600" />
-              <span className="text-sm font-semibold text-foreground">Uçtan Uca Şifreli</span>
+              <span className="text-sm font-semibold text-foreground">Güvenli Altyapı</span>
             </div>
             <div className="flex items-center gap-3 justify-center p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
               <Shield className="h-6 w-6 text-blue-600" />
-              <span className="text-sm font-semibold text-foreground">KVKK Uyumlu</span>
+              <span className="text-sm font-semibold text-foreground">KVKK Odaklı Veri Koruma</span>
             </div>
             <div className="flex items-center gap-3 justify-center p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
               <CheckCircle className="h-6 w-6 text-teal-600" />
-              <span className="text-sm font-semibold text-foreground">Veri Paylaşımı Yok</span>
+              <span className="text-sm font-semibold text-foreground">Verileriniz Satılmaz</span>
             </div>
             <div className="flex items-center gap-3 justify-center p-4 rounded-xl bg-white border border-gray-100 shadow-sm">
               <Brain className="h-6 w-6 text-purple-600" />
