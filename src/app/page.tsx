@@ -1,4 +1,4 @@
-import { Brain, Footprints, Scale, Shield, Lock, MessageCircle, CheckCircle, BarChart3, Smartphone, ArrowRight } from 'lucide-react';
+import { Brain, Footprints, Scale, Shield, Lock, MessageCircle, CheckCircle, BarChart3, Smartphone, ArrowRight, Check } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -233,6 +233,108 @@ export default function Home() {
         </div>
       </section>
 
+      {/* KULLANICI YORUMLARI (Testimonials) */}
+      <section className="py-24 bg-gray-50/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-4xl font-bold tracking-tight text-foreground">Kullanıcılarımız Ne Diyor?</h2>
+            <p className="text-xl text-muted-foreground">Gerçek deneyimler, gerçek dönüşümler.</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Yorum 1 */}
+            <Card className="border-teal-100 bg-white p-6">
+              <CardContent className="p-0 space-y-4">
+                <div className="flex gap-1 text-yellow-400">
+                  {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
+                </div>
+                <p className="text-muted-foreground italic">&quot;Sabah rutinimi oturtmakta zorlanıyordum. VERA sayesinde her gün 5 dakika ayırarak bu alışkanlığı 3 haftada kazandım. Yargılamayan yaklaşımı harika.&quot;</p>
+                <div className="flex items-center gap-3 pt-2">
+                  <Avatar className="h-10 w-10 bg-teal-100">
+                    <AvatarFallback className="text-teal-700 font-bold">AK</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Ayşe K.</p>
+                    <p className="text-xs text-muted-foreground">Yazılım Mühendisi, İstanbul</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Yorum 2 */}
+            <Card className="border-teal-100 bg-white p-6">
+              <CardContent className="p-0 space-y-4">
+                <div className="flex gap-1 text-yellow-400">
+                  {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
+                </div>
+                <p className="text-muted-foreground italic">&quot;Alışkanlıklarımı değiştirmek istiyordum ama listeler işe yaramıyordu. VERA&apos;nın &apos;farkındalık&apos; odaklı soruları bakış açımı tamamen değiştirdi.&quot;</p>
+                <div className="flex items-center gap-3 pt-2">
+                  <Avatar className="h-10 w-10 bg-blue-100">
+                    <AvatarFallback className="text-blue-700 font-bold">MB</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Mehmet B.</p>
+                    <p className="text-xs text-muted-foreground">Öğretmen, Ankara</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Yorum 3 */}
+            <Card className="border-teal-100 bg-white p-6">
+              <CardContent className="p-0 space-y-4">
+                <div className="flex gap-1 text-yellow-400">
+                  {[...Array(5)].map((_, i) => <span key={i}>★</span>)}
+                </div>
+                <p className="text-muted-foreground italic">&quot;Yeni bir uygulama indirmekle uğraşmak istemiyordum. Doğrudan WhatsApp&apos;tan çalışması ve nazik hatırlatmaları çok pratik.&quot;</p>
+                <div className="flex items-center gap-3 pt-2">
+                  <Avatar className="h-10 w-10 bg-purple-100">
+                    <AvatarFallback className="text-purple-700 font-bold">ZT</AvatarFallback>
+                  </Avatar>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">Zeynep T.</p>
+                    <p className="text-xs text-muted-foreground">Girişimci, İzmir</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ŞEFFAF BAŞLANGIÇ */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground mb-4">Basit ve Şeffaf Başlangıç</h2>
+          <p className="text-lg text-muted-foreground mb-8">Karmaşık paketler veya gizli ücretler yok. Önce deneyin, beğenirseniz devam edin.</p>
+
+          <Card className="border-teal-200 bg-teal-50/30 p-8 max-w-2xl mx-auto">
+            <CardContent className="p-0">
+              <ul className="space-y-4 mb-8 text-left">
+                <li className="flex items-center gap-3 text-foreground">
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span>7 Gün Ücretsiz Deneme Süresi</span>
+                </li>
+                <li className="flex items-center gap-3 text-foreground">
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span>Uygulama indirmeye gerek yok, WhatsApp yeterli</span>
+                </li>
+                <li className="flex items-center gap-3 text-foreground">
+                  <Check className="h-5 w-5 text-teal-600 flex-shrink-0" />
+                  <span>İstediğiniz zaman, tek tuşla iptal edin</span>
+                </li>
+              </ul>
+              <Button
+                size="lg"
+                className="bg-teal-600 hover:bg-teal-700 text-white rounded-full px-8 h-12 text-base w-full sm:w-auto"
+                render={<a href={whatsappLink} target="_blank" rel="noopener noreferrer" />}
+              >
+                WhatsApp&apos;tan Detaylı Bilgi Al
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
       {/* GÜVEN ROZETLERİ */}
       <section className="py-16 bg-gray-50 border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -286,6 +388,38 @@ export default function Home() {
               </AccordionTrigger>
               <AccordionContent className="text-muted-foreground pb-6">
                 Başlangıç ücretsizdir. Detaylı bilgi ve premium özellikler için WhatsApp'tan bize ulaşabilirsiniz.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4" className="border border-gray-200 rounded-xl px-6">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
+                VERA bir terapist veya psikolog mudur?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-6">
+                Hayır. VERA, tıbbi teşhis veya tedavi sunmaz. Sadece davranışsal farkındalık ve alışkanlık takibi konusunda size rehberlik eden bir yapay zeka asistanıdır.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5" className="border border-gray-200 rounded-xl px-6">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
+                Konuşmalarım insanlar tarafından okunuyor mu?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-6">
+                Hayır. Tüm etkileşimleriniz otomatik sistemler tarafından işlenir. Verileriniz KVKK odaklı güvenlik önlemleriyle korunur ve üçüncü şahıslarla satılmaz veya paylaşılmaz.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6" className="border border-gray-200 rounded-xl px-6">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
+                VERA bana kendiliğinden mesaj gönderebilir mi?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-6">
+                Hayır, VERA yalnızca siz WhatsApp üzerinden bir mesaj başlattığınızda veya sizden açık onay aldığında size yanıt verir. İstenmeyen mesajlar göndermez.
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-7" className="border border-gray-200 rounded-xl px-6">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
+                İstediğim zaman bırakabilir miyim?
+              </AccordionTrigger>
+              <AccordionContent className="text-muted-foreground pb-6">
+                Elbette. VERA'yı kullanmayı istediğiniz herhangi bir anda durdurabilirsiniz, herhangi bir taahhüt veya gizli ücret yoktur.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
